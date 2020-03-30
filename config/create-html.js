@@ -1,9 +1,9 @@
 /**
- * @file 页面html配置
- * @author:leinov
- * @date: 2018-10-09
+ * @file Page html configuration
+ * @author:messidagod
+ * @date: 03/31/2020
  * @update: 2018-11-05
- * @use: 动态配置html页面，获取src下每个文件下的pageinfo.json内容,解析到HtmlWebpackPlugin中
+ * @use: Dynamically configure the html page, get the pageinfo.json content under each file under src, and parse it into HtmlWebpackPlugin
  */
 
 const fs = require("fs");

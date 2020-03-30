@@ -1,6 +1,6 @@
 
 /**
- * util工具函数
+ * util tool functions
  *
  * @export
  * @class utils
@@ -8,7 +8,7 @@
 export default class utils{
 
     /**
-     * 深拷贝
+     * Deep copy
      *
      * @static
      * @param {Object} data
@@ -38,23 +38,23 @@ export default class utils{
     }
 
     /**
-     * 获取今天的日期
+     * Get today's date
      *
      * @static
-     * @param {String} [type="-"]
-     * @returns {String} // 2018-11-11
+     * @param {String} [type="/"]
+     * @returns {String} //03/30/2020
      * @memberof utils
      */
-    static getDate(type = "-") {
+    static getDate(type = "/") {
 		const date = new Date();
 		const year = date.getFullYear();
 		const month = this.datePlus0(new Date().getMonth() + 1);
 		const currentDate = this.datePlus0(new Date().getDate());
-		return `${year}${type}${month}${type}${currentDate}`;
+        return `${month}${type}${currentDate}${type}${year}`;
     }
 
     /**
-     * 加0
+     * Add 0
      *
      * @static
      * @param {Number} x

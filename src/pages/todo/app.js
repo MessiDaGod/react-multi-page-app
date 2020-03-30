@@ -72,7 +72,7 @@ class App extends React.Component {
 			<div>
 				<Nav />
 				<div className="main todo column is-8">
-					<h1 className="title"> {utils.getDate("-")} todo list</h1>
+					<h1 className="title"> {utils.getDate("/")} todo list</h1>
 					<AddTodo 
 						onChange={this.onChange} 
 						onKeyDown={this.onKeyDown}
