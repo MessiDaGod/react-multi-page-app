@@ -1,27 +1,21 @@
 /* eslint-env node */
 
-/**
- * @file: 线上启动程序
- * @author: leinov
- * @date: 2018-10-10
- */
-
 var express = require("express");
 var app = express();
 var http = require("http");
 var port = "3118";
-//在浏览器中打开 下面执行
+//Open in browser and execute below
 const opn = require("opn");
 
-//启动压缩
+//start compression
 var compression = require("compression");
 app.use(compression());
 
-//静态页面路径
+//Static page path
 app.use(express.static("./build"));
 app.set("port", port);
 
-//启动server
+//start server
 var server = http.createServer(app);
 server.listen(port);
 
