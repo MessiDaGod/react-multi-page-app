@@ -1,9 +1,4 @@
-/********************************
- * @file: todolist page
- * @desc: react-redux todo list
- * @author: leinov
- * @date:2018-12-06
- *******************************/
+//jshint esversion:6
 
 import React from "react";
 import {connect} from "react-redux";
